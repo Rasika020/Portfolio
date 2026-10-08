@@ -1,0 +1,1 @@
+const targets=document.querySelectorAll('.section,.project,.statement,.contact');const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});targets.forEach(x=>obs.observe(x));
