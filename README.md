@@ -1,10 +1,13 @@
 # Rasika Devanhalli — Portfolio
 
-A personal portfolio for Rasika Devanhalli, Software Engineer working across applied AI, backend engineering and systems.
+A dark, engineering-focused portfolio for Rasika Devanhalli, Software Engineer working across production GenAI, backend systems and applied AI.
 
-## Design direction
+## Design & implementation
 
-An editorial, typography-led layout built around real engineering work. The site uses semantic HTML, responsive CSS and a small JavaScript layer for accessible navigation and project filters.
+- Semantic HTML, responsive CSS and vanilla JavaScript.
+- Dark technical visual system with system diagrams and implementation-focused project notes.
+- Accessible mobile navigation, project filters and reduced-motion support.
+- No frontend framework or build step.
 
 ## Run locally
 
@@ -12,10 +15,4 @@ Open \`index.html\` in a browser, or serve the repository root with any static w
 
 ## Deployment
 
-The site is deployed with GitHub Pages through the workflow in \`.github/workflows/pages.yml\`. Pushes to \`main\` trigger the deployment workflow; it can also be started manually from GitHub Actions.
-
-## Project links
-
-- [LifeAdmin](https://github.com/Rasika020/LifeAdmin)
-- [ProofLens](https://github.com/Rasika020/ProofLens)
-- [Open Source Agents](https://github.com/Rasika020/open-source-agents)
+GitHub Pages is deployed through \`.github/workflows/pages.yml\`. A push to \`main\` triggers deployment; the workflow can also be run manually from GitHub Actions.

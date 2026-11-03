@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.querySelector(".menu-toggle");
-  const navigation = document.querySelector("#primary-nav");
+  const navigation = document.querySelector("#site-nav");
 
   if (menuButton && navigation) {
     menuButton.addEventListener("click", () => {
-      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-      menuButton.setAttribute("aria-expanded", String(!isOpen));
-      menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
-      navigation.classList.toggle("is-open", !isOpen);
+      const open = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!open));
+      menuButton.setAttribute("aria-label", open ? "Open navigation" : "Close navigation");
+      navigation.classList.toggle("is-open", !open);
     });
 
     navigation.querySelectorAll("a").forEach((link) => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const filters = Array.from(document.querySelectorAll("[data-filter]"));
-  const cards = Array.from(document.querySelectorAll(".work-card[data-category]"));
+  const projects = Array.from(document.querySelectorAll(".project[data-category]"));
 
   filters.forEach((filter) => {
     filter.addEventListener("click", () => {
@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
         button.setAttribute("aria-pressed", String(active));
       });
 
-      cards.forEach((card) => {
-        card.hidden = category !== "all" && card.dataset.category !== category;
+      projects.forEach((project) => {
+        project.hidden = category !== "all" && project.dataset.category !== category;
       });
     });
   });
