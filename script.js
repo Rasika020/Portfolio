@@ -136,7 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
         ctx.fill();
       });
 
-      if (!reducedMotion) frame = window.requestAnimationFrame(drawFrame);
+    };
+
+    const animate = (time) => {
+      drawFrame(time);
+      if (!reducedMotion) frame = window.requestAnimationFrame(animate);
     };
 
     host.addEventListener("pointermove", (event) => {
@@ -148,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     host.addEventListener("pointerleave", () => { pointer.active = false; });
     window.addEventListener("resize", resizeCanvas, { passive: true });
     resizeCanvas();
-    if (!reducedMotion) frame = window.requestAnimationFrame(drawFrame);
+    if (!reducedMotion) frame = window.requestAnimationFrame(animate);
     window.addEventListener("pagehide", () => window.cancelAnimationFrame(frame), { once: true });
   }
 
@@ -403,7 +407,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Working terminal. User input is only ever rendered as text.
+
+  // Progressive reveal for content modules, without hiding content when JS is unavailable.
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: "0px 0px -24px 0px" });
+
+    $(".project-card, .timeline-item, .stack-grid article, .boundary-grid article").forEach((element) => {
+      element.classList.add("will-reveal");
+      revealObserver.observe(element);
+    });
+  }
+
+    // Working terminal. User input is only ever rendered as text.
   const terminalForm = $("#terminal-form");
   const terminalInput = $("#terminal-input");
   const terminalScreen = $("#terminal-screen");

@@ -431,3 +431,9 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
   html { scroll-behavior: auto; }
   *, *:before, *:after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+/* Motion is progressive: content remains visible when JavaScript is unavailable. */
+.will-reveal { opacity: 0; transform: translateY(13px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.7,.2,1); }
+.will-reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .will-reveal, .will-reveal.is-visible { opacity: 1; transform: none; transition: none; }
+}
