@@ -1,34 +1,43 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Progressive enhancement: reveal content only when the browser supports observers.
-  const revealTargets = document.querySelectorAll(".section, .project, .systems, .impact-strip, .contact");
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
+  const menuButton = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector("#primary-nav");
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+      navigation.classList.toggle("is-open", !isOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
       });
-    }, { threshold: 0.08, rootMargin: "0px 0px -24px 0px" });
-    revealTargets.forEach((target) => observer.observe(target));
-  } else {
-    revealTargets.forEach((target) => target.classList.add("visible"));
+    });
   }
 
-  const filters = document.querySelectorAll("[data-filter]");
-  const projects = document.querySelectorAll(".project[data-category]");
+  const filters = Array.from(document.querySelectorAll("[data-filter]"));
+  const cards = Array.from(document.querySelectorAll(".work-card[data-category]"));
+
   filters.forEach((filter) => {
     filter.addEventListener("click", () => {
       const category = filter.dataset.filter || "all";
+
       filters.forEach((button) => {
         const active = button === filter;
-        button.classList.toggle("active", active);
+        button.classList.toggle("is-active", active);
         button.setAttribute("aria-pressed", String(active));
       });
-      projects.forEach((project) => {
-        const show = category === "all" || project.dataset.category === category;
-        project.hidden = !show;
+
+      cards.forEach((card) => {
+        card.hidden = category !== "all" && card.dataset.category !== category;
       });
     });
   });
+
+  const year = document.querySelector("[data-year]");
+  if (year) year.textContent = String(new Date().getFullYear());
 });

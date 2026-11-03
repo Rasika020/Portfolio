@@ -1,208 +1,360 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Rasika Devanhalli — Software Engineer specializing in Generative AI, LLM applications, RAG, agentic systems, model optimization and production AI engineering.">
-<meta name="theme-color" content="#08090c">
-<meta name="color-scheme" content="dark">
-<meta property="og:url" content="https://rasika020.github.io/Portfolio/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="author" content="Rasika Devanhalli">
-<meta property="og:title" content="Rasika Devanhalli — AI Software Engineer">
-<meta property="og:description" content="AI engineer building production-oriented LLM, RAG and agentic systems.">
-<meta property="og:type" content="website">
-<title>Rasika Devanhalli — AI Software Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2308090c'/%3E%3Ctext x='50' y='64' font-size='43' text-anchor='middle' font-family='Arial' font-weight='700' fill='%23b8a2ff'%3ERD%3C/text%3E%3C/svg%3E">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rasika Devanhalli is a software engineer working across production GenAI, backend systems, agentic workflows and dependable AI applications.">
+  <meta name="theme-color" content="#f3f0e8">
+  <meta name="author" content="Rasika Devanhalli">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rasika020.github.io/Portfolio/">
+  <meta property="og:title" content="Rasika Devanhalli — Software Engineer">
+  <meta property="og:description" content="Production AI, backend systems and thoughtful software engineering.">
+  <meta name="twitter:card" content="summary">
+  <title>Rasika Devanhalli — Software Engineer · Applied AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231d2422'/%3E%3Cpath d='M15 45V19h8l18 15V19h8v26h-8L23 30v15z' fill='%23f3f0e8'/%3E%3Ccircle cx='51' cy='13' r='5' fill='%233c56d8'/%3E%3C/svg%3E">
 </head>
 <body>
-<div class="noise"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="nav">
-  <a class="brand" href="#top" aria-label="Rasika Devanhalli home">RD<span>.</span><small>ENGINEERING PORTFOLIO</small></a>
-  <nav aria-label="Primary">
-    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Selected work</a><a href="#stack">Toolkit</a>
-  </nav>
-  <a class="nav-cta" href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-</header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#top" aria-label="Rasika Devanhalli — home">
+        <span class="monogram">R<span>.</span></span>
+        <span class="wordmark-copy">
+          <strong>Rasika Devanhalli</strong>
+          <small>SOFTWARE ENGINEER / APPLIED AI</small>
+        </span>
+      </a>
 
-<main id="top">
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow"><span class="dot"></span> SOFTWARE ENGINEER · APPLIED AI · SYSTEMS</p>
-    <h1>From AI ideas<br>to <em>systems that ship.</em></h1>
-    <p class="lede">I build production-oriented AI systems—from agentic workflows and multimodal retrieval to inference optimization and observability. My focus is the engineering that turns capable models into dependable software.</p>
-    <div class="actions">
-      <a class="button primary" href="#projects">Explore selected work <span>↓</span></a>
-      <a class="button secondary" href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">View LinkedIn <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#work">Selected work</a>
+        <a href="#approach">How I work</a>
+        <a href="#trajectory">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-link" href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="hero-meta"><span>BENGALURU, INDIA</span><span>SOFTWARE FIRST · AI BY DESIGN</span></div>
-  </div>
-  <div class="hero-visual" aria-hidden="true">
-    <div class="orb"></div><div class="grid"></div>
-    <div class="signal-card"><span class="signal-label">PRODUCTION IMPACT</span><div class="signal-metric">4×<small> ingestion throughput</small></div><div class="signal-rule"><i></i></div><span class="signal-note">Multimodal document pipelines</span></div>
-    <div class="terminal">
-      <div class="terminal-bar"><i></i><i></i><i></i><span>production_ai.py</span></div>
-      <pre><span class="muted">01</span> <b>system</b> = AgenticAI(
-<span class="muted">02</span>     retrieval=<span class="accent">"multimodal"</span>,
-<span class="muted">03</span>     tools=<span class="accent">"structured"</span>,
-<span class="muted">04</span>     evaluation=<span class="accent">"continuous"</span>
-<span class="muted">05</span> )
-<span class="muted">06</span>
-<span class="muted">07</span> <b>system</b>.observe(<span class="accent">production</span>)</pre>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section class="impact-strip" aria-label="Selected engineering impact">
-  <div><strong>30,000+</strong><span>employees served by enterprise GenAI platform</span></div>
-  <div><strong>143,000+</strong><span>hours of weekly productivity gains enabled platform-wide</span></div>
-  <div><strong>4×</strong><span>document-ingestion throughput improvement</span></div>
-  <div><strong>20–25%</strong><span>improvement in production model evaluation</span></div>
-</section>
-
-<section class="proof-strip" aria-label="Core areas">
-  <span>LLMs</span><b>✦</b><span>RAG</span><b>✦</b><span>AGENTIC AI</span><b>✦</b><span>FINE-TUNING</span><b>✦</b><span>EVALUATION</span><b>✦</b><span>OBSERVABILITY</span><b>✦</b><span>BACKEND SYSTEMS</span>
-</section>
-
-<section id="about" class="section about">
-  <div>
-    <p class="section-kicker">01 / PROFILE</p>
-    <h2>An engineer who thinks in <em>systems.</em></h2>
-  </div>
-  <div class="about-copy">
-    <p class="lead-strong">I build AI products with the mindset of a <strong>software engineer first</strong>.</p>
-    <p>Models are only one part of the product. I work across orchestration, retrieval quality, inference cost, APIs, asynchronous processing, evaluation and telemetry—with attention to reliability, maintainability and measurable outcomes.</p>
-    <div class="principles">
-      <div><span>01</span><strong>Build for production</strong><p>Robust interfaces, explicit contracts, observability and failure-aware workflows.</p></div>
-      <div><span>02</span><strong>Measure what matters</strong><p>Evaluation and telemetry are part of the product, not an afterthought.</p></div>
-      <div><span>03</span><strong>Keep learning</strong><p>Deepening foundations in systems, algorithms, ML and model behavior.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="section">
-  <div class="section-head"><div><p class="section-kicker">02 / EXPERIENCE</p><h2>Where I've <em>engineered.</em></h2></div></div>
-  <div class="timeline">
-    <article class="timeline-item">
-      <div class="time">2024 — PRESENT</div>
-      <div class="timeline-body">
-        <h3>Software Engineer — AI</h3>
-        <p class="company">Société Générale Global Solution Centre · Bengaluru</p>
-        <p>Engineer on an enterprise GenAI platform used by 30,000+ employees, with platform-wide productivity gains reported at 143,000+ hours weekly.</p>
-        <ul><li>Shipped 5 production agentic workflows using LangGraph, LangChain, MCP, structured tool calling and internal APIs.</li><li>Improved document ingestion throughput 4× through asynchronous processing, ProcessPoolExecutor parallelism and optimized Docling pipelines.</li><li>Productionized hosted and open-weight LLMs; worked across quantization, QLoRA/PEFT fine-tuning and context-aware token management.</li><li>Built evaluation and observability workflows across tracing, semantic telemetry, Elasticsearch analytics and LLM-as-a-Judge, improving production model evaluation by 20–25%.</li></ul>
+  <main id="main">
+    <section class="intro section-wrap" id="top">
+      <div class="intro-topline">
+        <span class="eyebrow">01 / INTRODUCTION</span>
+        <span class="location-note"><span class="location-dot"></span> BENGALURU, INDIA</span>
       </div>
-    </article>
-    <article class="timeline-item">
-      <div class="time">MAY 2023 — JULY 2023</div>
-      <div class="timeline-body">
-        <h3>Software Engineer Intern</h3>
-        <p class="company">Microsoft · Bengaluru, Karnataka, India</p>
-        <ul><li>Built a diagnostics and debugging pipeline for Microsoft's SDN Appliance (Azure Networking) by writing C APIs and engineering a gRPC-based channel between Appliance Manager and the SDN Appliance Host Agent to fetch card state remotely.</li><li>Routed diagnostic results to Kusto (Azure Data Explorer) via an hourly polling thread, eliminating the manual, ad hoc process engineers previously used to debug networking state.</li><li>Presented the solution to the head of Azure Networking.</li></ul>
+
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <p class="role-line">SOFTWARE ENGINEER <span>·</span> APPLIED AI <span>·</span> BACKEND SYSTEMS</p>
+          <h1>I build <em>reliable systems</em> for an intelligent world.</h1>
+          <p class="intro-deck">I’m Rasika — a software engineer working across production GenAI, backend systems and the infrastructure that makes intelligent applications dependable. I care about what happens after the demo: integration, scale, evaluation and the details that make software hold up.</p>
+          <div class="intro-actions">
+            <a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="intro-footnote">
+            <span>PYTHON / SYSTEMS / GENERATIVE AI</span>
+            <span>BUILT WITH CURIOSITY, SHIPPED WITH CARE</span>
+          </div>
+        </div>
+
+        <aside class="systems-note" aria-label="A view of the engineering process">
+          <div class="systems-note-head">
+            <span class="eyebrow">A SYSTEMS VIEW</span>
+            <span class="note-index">FIG. 01</span>
+          </div>
+          <p class="systems-note-title">The work is in the <em>connections.</em></p>
+          <div class="system-flow">
+            <div class="flow-step">
+              <span class="flow-number">01</span>
+              <div><strong>Understand the problem</strong><small>Users, constraints, failure modes</small></div>
+              <span class="flow-mark">↘</span>
+            </div>
+            <div class="flow-step">
+              <span class="flow-number">02</span>
+              <div><strong>Design the system</strong><small>APIs, data, orchestration, state</small></div>
+              <span class="flow-mark">↘</span>
+            </div>
+            <div class="flow-step">
+              <span class="flow-number">03</span>
+              <div><strong>Make it dependable</strong><small>Inference, testing, observability</small></div>
+              <span class="flow-mark">↘</span>
+            </div>
+            <div class="flow-step flow-step-last">
+              <span class="flow-number">04</span>
+              <div><strong>Learn from production</strong><small>Measure, improve, repeat</small></div>
+              <span class="flow-mark">↗</span>
+            </div>
+          </div>
+          <div class="systems-note-foot"><span>FROM IDEA</span><span class="line"></span><span>TO SOFTWARE PEOPLE CAN RELY ON</span></div>
+        </aside>
       </div>
-    </article>
-    <article class="timeline-item">
-      <div class="time">AUGUST 2023 — JANUARY 2024</div>
-      <div class="timeline-body">
-        <h3>Project Intern</h3>
-        <p class="company">Veritas Technologies LLC</p>
-        <p>In partial fulfillment of my B.Tech Degree in Information Technology, worked on the project titled File Level Encryption Support in XFS File System. The project was sponsored by Veritas Technologies.</p>
+    </section>
+
+    <section class="impact-band" aria-label="Selected engineering outcomes">
+      <div class="impact-inner">
+        <div class="impact-heading"><span class="eyebrow">IMPACT AT<br>A GLANCE</span></div>
+        <div class="impact-item"><strong>30,000<span>+</span></strong><p>employees served by an enterprise GenAI platform</p></div>
+        <div class="impact-item"><strong>143,000<span>+</span></strong><p>employee hours of weekly productivity gains enabled platform-wide</p></div>
+        <div class="impact-item"><strong>5</strong><p>agentic workflows shipped to production</p></div>
+        <div class="impact-item"><strong>4<span>×</span></strong><p>higher document-ingestion throughput</p></div>
       </div>
-    </article>
-  </div>
-</section>
+    </section>
 
-<section id="projects" class="section">
-  <div class="section-head">
-    <div><p class="section-kicker">03 / SELECTED WORK</p><h2>Proof through <em>projects.</em></h2><p class="section-intro">A few things I’ve built, explored and shipped. Filter by the kind of engineering you want to see.</p></div>
-    <a class="text-link" href="https://github.com/Rasika020?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a>
-  </div>
-  <div class="project-filters" role="group" aria-label="Filter projects">
-    <button class="filter active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button>
-    <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI & product</button>
-    <button class="filter" type="button" data-filter="systems" aria-pressed="false">Systems</button>
-    <button class="filter" type="button" data-filter="vision" aria-pressed="false">Computer vision</button>
-    <button class="filter" type="button" data-filter="applications" aria-pressed="false">Applications</button>
-  </div>
-  <div class="projects">
-    <a class="project featured" data-category="systems" href="https://github.com/Rasika020" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>01</span><span>SYSTEMS / SECURITY</span></div><h3>File-level encryption for XFS</h3>
-      <p>An academic systems project exploring file-level encryption for XFS, using OpenSSL AES, SHA-256 integrity checks and communication with a key management server.</p>
-      <div class="case-meta"><span>LINUX FILE SYSTEMS</span><span>CRYPTOGRAPHY</span><span>KMS</span></div>
-      <div class="project-bottom"><span>Systems · Security</span><span>Explore ↗</span></div>
-    </a>
-    <a class="project featured" data-category="ai" href="https://github.com/Rasika020/talenthire-ai" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>02</span><span>AI / TALENT TECH</span></div><h3>TalentHire AI</h3>
-      <p>A talent-tech application focused on AI-supported recruiting workflows and candidate management. Repository access may be limited while the project remains private.</p>
-      <div class="case-meta"><span>TALENT TECH</span><span>AI PRODUCT</span></div>
-      <div class="project-bottom"><span>AI applications</span><span>Repository ↗</span></div>
-    </a>
-    <a class="project" data-category="systems" href="https://github.com/Rasika020/AR_Warehouse_Operations_Eaton_Pratibha" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>03</span><span>AR / SYSTEMS</span></div><h3>AR Warehouse</h3>
-      <p>An augmented-reality warehouse operations project. The repository includes a software-development lifecycle workflow diagram.</p>
-      <div class="case-meta"><span>AR</span><span>OPERATIONS</span><span>SDLC</span></div>
-      <div class="project-bottom"><span>AR · Engineering</span><span>View ↗</span></div>
-    </a>
-    <a class="project" data-category="ai" href="https://github.com/Rasika020" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>04</span><span>FINANCIAL SYSTEMS</span></div><h3>SG TradeFlow</h3>
-      <p>A trade-workflow project associated with financial-services processes. The exact repository URL wasn’t verified, so this card links to the GitHub profile until the repository can be confirmed.</p>
-      <div class="case-meta"><span>FINANCE</span><span>WORKFLOWS</span></div>
-      <div class="project-bottom"><span>AI · Financial systems</span><span>Explore ↗</span></div>
-    </a>
-    <a class="project" data-category="vision" href="https://github.com/Rasika020/Face_Recognition_Project" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>05</span><span>COMPUTER VISION</span></div><h3>Face Recognition Attendance</h3>
-      <p>A Python attendance application using OpenCV for face recognition, a Tkinter GUI, password-protected registration and daily CSV attendance records.</p>
-      <div class="case-meta"><span>OPENCV</span><span>PYTHON</span><span>TKINTER</span></div>
-      <div class="project-bottom"><span>Python · Computer vision</span><span>View ↗</span></div>
-    </a>
-    <a class="project" data-category="applications" href="https://github.com/Rasika020/Project_OnlineVotingSystem" target="_blank" rel="noreferrer">
-      <div class="project-top"><span>06</span><span>APPLICATION</span></div><h3>Online Voting System</h3>
-      <p>An online voting system project focused on digitizing the voting process. Open the repository for implementation details and the supported stack.</p>
-      <div class="case-meta"><span>APPLICATION DEVELOPMENT</span><span>VOTING WORKFLOW</span></div>
-      <div class="project-bottom"><span>Software engineering</span><span>View ↗</span></div>
-    </a>
-  </div>
+    <section class="work-section section-wrap" id="work">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">02 / SELECTED WORK</span>
+          <h2>Engineering, <em>in practice.</em></h2>
+        </div>
+        <p class="section-summary">A selection of professional work and independent projects. Different problems, same instinct: understand the constraints, design the system, and make the result useful.</p>
+      </div>
 
-</section>
+      <div class="work-filters" role="group" aria-label="Filter selected work">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>04</span></button>
+        <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Applied AI</button>
+        <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+        <button class="filter-button" type="button" data-filter="product" aria-pressed="false">Products</button>
+      </div>
 
-<section id="stack" class="section stack-section">
-  <p class="section-kicker">04 / TECHNICAL TOOLKIT</p>
-  <h2>Deep where it matters.<br><em>Broad enough to ship.</em></h2>
-  <div class="stack-grid">
-    <div><h4>GENERATIVE AI</h4><p>LLMs · RAG · Agentic AI · Prompt Engineering · Fine-tuning · QLoRA · PEFT · Quantization · Model Evaluation</p></div>
-    <div><h4>AI SYSTEMS</h4><p>LangChain · LangGraph · LangSmith · MCP · Azure OpenAI · Hugging Face · Weaviate · Ollama</p></div>
-    <div><h4>SOFTWARE ENGINEERING</h4><p>Python · Java · C# · C · FastAPI · REST APIs · PostgreSQL · MySQL · MongoDB · Git</p></div>
-    <div><h4>SYSTEMS & MLOPS</h4><p>Model Deployment · AI Observability · Inference Optimization · DevOps · Distributed Systems · System Design</p></div>
-  </div>
-</section>
+      <div class="work-grid">
+        <article class="work-card work-card-wide" data-category="ai">
+          <div class="work-card-top">
+            <span class="work-number">01 / PROFESSIONAL WORK</span>
+            <span class="work-context">SOCIÉTÉ GÉNÉRALE · 2024—NOW</span>
+          </div>
+          <div class="enterprise-layout">
+            <div class="enterprise-copy">
+              <span class="project-label">ENTERPRISE GENAI PLATFORM</span>
+              <h3>Taking AI from a capable model to a <em>working system.</em></h3>
+              <p>I work on the engineering behind an enterprise GenAI platform used by 30,000+ employees. My contributions span agent orchestration, model deployment, multimodal retrieval, document processing and evaluation.</p>
+              <p class="project-detail">The platform reports 143,000+ employee hours of weekly productivity gains. My focus is the practical engineering underneath that experience: predictable workflows, better retrieval, efficient inference and measurable quality.</p>
+              <div class="tag-list"><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>FastAPI</span><span>Azure OpenAI</span><span>LLMOps</span></div>
+            </div>
+            <div class="enterprise-facts">
+              <div><strong>5</strong><span>agentic workflows shipped to production</span></div>
+              <div><strong>4×</strong><span>document-ingestion throughput improvement</span></div>
+              <div><strong>20–25%</strong><span>improvement in production model evaluation</span></div>
+              <p>SELECTED ENGINEERING CONTRIBUTIONS</p>
+            </div>
+          </div>
+        </article>
 
-<section class="systems">
-  <div class="systems-inner">
-    <p class="section-kicker">05 / ENGINEERING MINDSET</p>
-    <h2>AI is the model.<br><em>The product is the system.</em></h2>
-    <div class="systems-grid">
-      <div><span>01</span><strong>Retrieval</strong><p>Grounding, context quality and multimodal document intelligence.</p></div>
-      <div><span>02</span><strong>Orchestration</strong><p>Stateful agents, tools, APIs and reliable workflow control.</p></div>
-      <div><span>03</span><strong>Optimization</strong><p>Fine-tuning, quantization, token efficiency and inference trade-offs.</p></div>
-      <div><span>04</span><strong>Evaluation</strong><p>Quality measurement, telemetry, tracing and continuous improvement.</p></div>
+        <article class="work-card" data-category="product">
+          <div class="work-card-top">
+            <span class="work-number">02 / INDEPENDENT PROJECT</span>
+            <span class="work-context">LOCAL-FIRST · PYTHON</span>
+          </div>
+          <div class="project-art art-life" aria-hidden="true">
+            <span class="art-kicker">LIFEADMIN / PERSONAL SYSTEMS</span>
+            <div class="mini-agenda">
+              <div><span class="agenda-check"></span><span>Renew vehicle insurance</span><small>10 NOV</small></div>
+              <div><span class="agenda-check"></span><span>Book annual check-up</span><small>14 NOV</small></div>
+              <div><span class="agenda-check"></span><span>Submit travel documents</span><small>18 NOV</small></div>
+            </div>
+            <span class="art-caption">A quieter way to keep life in order.</span>
+          </div>
+          <div class="work-card-copy">
+            <span class="project-label">LIFEADMIN</span>
+            <h3>Personal deadlines, kept <em>local.</em></h3>
+            <p>A local-first reminder system with a CLI, browser interface, MCP server and SQLite persistence. An optional Gemma 4 agent runs through Ollama and Google ADK.</p>
+            <p class="project-detail">The key design decision: the model interprets natural language, while deterministic Python validates dates and performs database changes. The core app works without an AI model.</p>
+            <div class="tag-list"><span>Python</span><span>SQLite</span><span>MCP</span><span>Google ADK</span><span>Gemma 4</span></div>
+            <a class="card-link" href="https://github.com/Rasika020/LifeAdmin" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ai">
+          <div class="work-card-top">
+            <span class="work-number">03 / HACKATHON PROTOTYPE</span>
+            <span class="work-context">META AI DEVELOPER HACKATHON</span>
+          </div>
+          <div class="project-art art-proof" aria-hidden="true">
+            <span class="art-kicker">PROOFLENS / GRAPH RECONSTRUCTION</span>
+            <div class="proof-diagram">
+              <div class="proof-node">SOURCE<br>IMAGE</div>
+              <span class="proof-arrow">→</span>
+              <div class="proof-node proof-node-accent">STRUCTURED<br>GRAPH</div>
+              <span class="proof-arrow">→</span>
+              <div class="proof-node">VALIDATED<br>PATH</div>
+            </div>
+            <span class="art-caption">A model proposes. The system verifies.</span>
+          </div>
+          <div class="work-card-copy">
+            <span class="project-label">PROOFLENS</span>
+            <h3>Making diagrams <em>inspectable.</em></h3>
+            <p>A prototype that reconstructs flowcharts into interactive graphs, preserving the connection to the source image so users can inspect nodes, labels and paths.</p>
+            <p class="project-detail">Its core principle is deliberate: the model proposes a graph; application code validates structural consistency; users can inspect and correct uncertainty.</p>
+            <div class="tag-list"><span>Computer Vision</span><span>Graph Validation</span><span>Python</span><span>AI Systems</span></div>
+            <a class="card-link" href="https://github.com/Rasika020/ProofLens" target="_blank" rel="noreferrer">Explore the repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="systems">
+          <div class="work-card-top">
+            <span class="work-number">04 / SPONSORED ACADEMIC PROJECT</span>
+            <span class="work-context">VERITAS TECHNOLOGIES</span>
+          </div>
+          <div class="project-art art-xfs" aria-hidden="true">
+            <span class="art-kicker">XFS / FILE-LEVEL ENCRYPTION</span>
+            <div class="file-stack">
+              <div class="file-sheet"><span>report.pdf</span><b>ENCRYPTED</b></div>
+              <div class="file-sheet file-sheet-back"><span>key material</span><b>KMS</b></div>
+            </div>
+            <span class="art-caption">Protect the file, not just the disk.</span>
+          </div>
+          <div class="work-card-copy">
+            <span class="project-label">FILE-LEVEL ENCRYPTION FOR XFS</span>
+            <h3>Security at the <em>file boundary.</em></h3>
+            <p>A sponsored engineering project exploring file-level encryption support for the XFS filesystem, with AES encryption through OpenSSL, SHA-256 integrity checks and communication with a key management server.</p>
+            <div class="tag-list"><span>Linux</span><span>XFS</span><span>OpenSSL</span><span>AES</span><span>SHA-256</span><span>KMS</span></div>
+            <span class="card-note">VERITAS TECHNOLOGIES · 2023</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-work">
+        <div><span class="eyebrow">COMMUNITY / OPEN SOURCE</span><p>Contributing to a community-driven collection of practical AI agents and developer tools, established with GDG Cloud Bengaluru during Road to DevFest 2026.</p></div>
+        <a class="text-link" href="https://github.com/Rasika020/open-source-agents" target="_blank" rel="noreferrer">Open-source repository <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="approach-section" id="approach">
+      <div class="section-wrap approach-inner">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">03 / HOW I WORK</span>
+            <h2>Good engineering is <em>what holds it together.</em></h2>
+          </div>
+          <p class="section-summary">I like working across boundaries: model and application, API and interface, fast prototype and maintainable system.</p>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle">
+            <span class="principle-index">01</span>
+            <h3>Start with the system.</h3>
+            <p>Choose components from the constraints, not the trend. Make data flow, ownership and failure behavior explicit.</p>
+          </article>
+          <article class="principle">
+            <span class="principle-index">02</span>
+            <h3>Make quality observable.</h3>
+            <p>Evaluation, tracing and useful telemetry belong in the engineering loop. A response that looks right is not enough.</p>
+          </article>
+          <article class="principle">
+            <span class="principle-index">03</span>
+            <h3>Keep the core dependable.</h3>
+            <p>Use deterministic software for the things that must be correct. Apply models where they add capability, not uncertainty.</p>
+          </article>
+        </div>
+
+        <div class="capability-block">
+          <div class="capability-title"><span class="eyebrow">TOOLS & DOMAINS</span><span class="capability-note">A working toolkit, not a badge collection.</span></div>
+          <div class="capability-row">
+            <h4>APPLIED AI</h4>
+            <p>LLMs · RAG · Agentic workflows · LangGraph · LangChain · MCP · Hugging Face · Fine-tuning · QLoRA / PEFT · Quantization · Model evaluation</p>
+          </div>
+          <div class="capability-row">
+            <h4>BACKEND & DATA</h4>
+            <p>Python · FastAPI · REST APIs · Asynchronous processing · PostgreSQL · MySQL · MongoDB · SQLite · Elasticsearch</p>
+          </div>
+          <div class="capability-row">
+            <h4>SYSTEMS</h4>
+            <p>C · C# · Java · Linux · gRPC · Distributed systems · Cryptography · Model deployment · Observability · Git</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trajectory-section section-wrap" id="trajectory">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">04 / EXPERIENCE & EDUCATION</span>
+          <h2>A path shaped by <em>building.</em></h2>
+        </div>
+        <p class="section-summary">From low-level systems work to enterprise AI platforms, each step has expanded the part of the stack I can reason about and own.</p>
+      </div>
+
+      <div class="trajectory-grid">
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-date">AUG 2024 — NOW</div>
+            <div class="experience-detail">
+              <h3>Software Engineer · AI</h3>
+              <p class="experience-org">Société Générale Global Solution Centre <span> / Bengaluru</span></p>
+              <p>Building and improving an enterprise GenAI platform across agentic workflows, model deployment, multimodal retrieval, document pipelines and AI observability.</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-date">2023</div>
+            <div class="experience-detail">
+              <h3>Software Engineer Intern</h3>
+              <p class="experience-org">Microsoft <span> / Azure Networking</span></p>
+              <p>Built C APIs and a gRPC communication channel for remote SDN appliance diagnostics, with telemetry routed to Azure Data Explorer (Kusto) through an hourly polling pipeline.</p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-date">2023</div>
+            <div class="experience-detail">
+              <h3>Project Intern</h3>
+              <p class="experience-org">Veritas Technologies</p>
+              <p>Worked on a sponsored project exploring file-level encryption support in the XFS filesystem.</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="education-panel">
+          <span class="eyebrow">EDUCATION</span>
+          <h3>MKSSS Cummins College of Engineering for Women</h3>
+          <p class="education-degree">B.Tech · Information Technology · 2024</p>
+          <div class="education-score"><strong>8.9<span>/10</span></strong><small>TOP 10% OF THE IT CLASS</small></div>
+          <div class="recognition">
+            <span class="eyebrow">RECOGNITION</span>
+            <div><strong>Pratibha — Eaton Excellence Award</strong><small>2023 · Academic and technical excellence</small></div>
+            <div><strong>Newbie Award · Société Générale</strong><small>2025</small></div>
+            <div><strong>Runner-up · Citi Code Challenge</strong><small>2022 · Pair-trading signal optimizer</small></div>
+            <div><strong>SWE WeLocal Scholar</strong><small>2022 · Society of Women Engineers</small></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner">
+        <div>
+          <span class="eyebrow">05 / CONTACT</span>
+          <h2>Have a meaningful problem? <em>Let's talk.</em></h2>
+          <p>I’m interested in thoughtful teams building useful software — especially across applied AI, backend engineering and systems that need to work in the real world.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:rasikadevanhalli020@gmail.com">rasikadevanhalli020@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="social-links">
+            <a href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://leetcode.com/u/user3138v/" target="_blank" rel="noreferrer">LeetCode ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© <span data-year>2026</span> RASIKA DEVANHALLI</span>
+      <span>DESIGNED AROUND THE WORK.</span>
+      <a href="#top">BACK TO TOP ↑</a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="contact" class="contact">
-  <p class="section-kicker">06 / CONTACT</p>
-  <h2>Let's build something<br><em>worth shipping.</em></h2>
-  <p>For AI engineering, applied ML, GenAI infrastructure or difficult software problems.</p>
-  <a class="contact-email" href="mailto:rasikadevanhalli020@gmail.com">rasikadevanhalli020@gmail.com <span>↗</span></a>
-  <div class="socials"><a href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://leetcode.com/u/user3138v/" target="_blank" rel="noreferrer">LeetCode ↗</a></div>
-</section>
-</main>
-
-<footer><span>© 2026 Rasika Devanhalli</span><span>Designed around engineering, not hype.</span><a href="#top">Back to top ↑</a></footer>
-<script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
