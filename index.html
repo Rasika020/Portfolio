@@ -3,350 +3,350 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rasika Devanhalli — Software Engineer working on production GenAI, agentic workflows, backend systems and AI infrastructure.">
-  <meta name="theme-color" content="#080c11">
+  <meta name="description" content="Rasika Devanhalli — Software Engineer focused on production GenAI, agentic systems, backend engineering and applied AI.">
+  <meta name="theme-color" content="#080b10">
   <meta name="author" content="Rasika Devanhalli">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rasika Devanhalli | Software Engineer">
-  <meta property="og:description" content="Production GenAI, backend systems and engineering work.">
+  <meta property="og:title" content="Rasika Devanhalli — Software Engineer">
+  <meta property="og:description" content="Production AI systems, backend engineering and technical projects.">
   <meta property="og:url" content="https://rasika020.github.io/Portfolio/">
   <meta name="twitter:card" content="summary">
-  <title>Rasika Devanhalli | Software Engineer</title>
+  <title>Rasika Devanhalli — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23080c11'/%3E%3Cpath d='M15 16h34v8H23v8h20v8H23v8h26v8H15z' fill='%237ee7c5'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23080b10'/%3E%3Cpath d='M15 14h34v8H23v7h23v8H23v7h26v8H15z' fill='%2389f0c9'/%3E%3C/svg%3E">
 </head>
 <body>
-  <div class="site-grid" aria-hidden="true"></div>
+  <div class="reading-progress" id="reading-progress"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="identity" href="#top" aria-label="Rasika Devanhalli home">
-        <span class="identity-mark">RD<span>.</span></span>
-        <span class="identity-name">RASIKA DEVANHALLI <small>SOFTWARE ENGINEER</small></span>
+      <a class="brand" href="#top" aria-label="Rasika Devanhalli home">
+        <span class="brand-mark">R<span>/</span>D</span>
+        <span class="brand-name">RASIKA DEVANHALLI<small>SOFTWARE ENGINEER</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
-        <a href="#systems">Systems</a>
+        <a href="#architecture">Architecture</a>
         <a href="#experience">Experience</a>
-        <a href="#stack">Stack</a>
+        <a href="#terminal">Terminal</a>
       </nav>
-      <a class="topbar-link" href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+
+      <div class="topbar-right">
+        <div class="clock-block">
+          <span class="clock-label mono">BENGALURU / IST</span>
+          <strong class="mono" id="local-clock">--:--:--</strong>
+        </div>
+        <a class="github-link" href="https://github.com/Rasika020" target="_blank" rel="noreferrer" aria-label="GitHub profile">GH <span>↗</span></a>
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero layout" aria-labelledby="hero-title">
-      <div class="hero-main">
-        <div class="availability-line"><span class="pulse"></span> BENGALURU, INDIA <span class="separator">/</span> SOFTWARE ENGINEERING · APPLIED AI</div>
-        <p class="hero-index mono">PORTFOLIO / 2026</p>
-        <h1 id="hero-title">Building AI systems.<br><span>Engineering them</span><br>to work.</h1>
-        <p class="hero-summary">I’m Rasika, a software engineer focused on production GenAI, agentic workflows and backend systems. I work across the model and the software around it: APIs, retrieval, orchestration, inference, evaluation and observability.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">View engineering work <span>↓</span></a>
-          <a class="button button-quiet" href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow-row mono"><span class="status-dot"></span> SOFTWARE ENGINEERING <b>/</b> APPLIED AI <b>/</b> BENGALURU, IN</div>
+        <p class="hero-overline mono">PORTFOLIO 2026 <span>—</span> SELECTED WORK & SYSTEMS</p>
+        <h1>Software engineering<br>for the <span>intelligent</span><br>era<span class="accent-period">.</span></h1>
+        <p class="hero-lede">I build AI-enabled software that survives contact with production. My work spans LLM orchestration, retrieval systems, inference optimization, backend services and the evaluation loops that keep them useful.</p>
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn-primary">Explore engineering work <span>↓</span></a>
+          <a href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer" class="btn btn-secondary">Connect <span>↗</span></a>
         </div>
         <div class="hero-foot mono">
-          <span>PYTHON / LLM SYSTEMS / BACKEND</span>
-          <span>SCROLL TO EXPLORE <b>↓</b></span>
+          <span>PYTHON · LANGGRAPH · FASTAPI · SYSTEMS</span>
+          <span>01 — 05 <i></i> SCROLL TO EXPLORE</span>
         </div>
       </div>
 
-      <aside class="hero-console" aria-label="Illustrative AI system architecture">
-        <div class="console-titlebar">
-          <div class="window-controls"><i></i><i></i><i></i></div>
-          <span class="console-file mono">system-map.ts</span>
-          <span class="console-state mono"><i></i> ENGINEERING VIEW</span>
+      <div class="hero-visual">
+        <div class="visual-top mono"><span>FIG 01. / SIGNAL NETWORK</span><span class="visual-live"><i></i> RENDERING LIVE</span></div>
+        <canvas id="signal-canvas" aria-label="Animated network visualization showing connected system nodes"></canvas>
+        <div class="visual-crosshair crosshair-a"></div>
+        <div class="visual-crosshair crosshair-b"></div>
+        <div class="visual-core">
+          <div class="core-ring ring-one"></div>
+          <div class="core-ring ring-two"></div>
+          <div class="core-center"><span>AI</span><small>SYSTEMS</small></div>
         </div>
-        <div class="console-body">
-          <div class="console-kicker mono"><span>01</span> REFERENCE ARCHITECTURE</div>
-          <div class="architecture">
-            <div class="arch-node arch-source">
-              <span class="arch-icon">IN</span>
-              <div><strong>Data & documents</strong><small>PDF · files · APIs · user input</small></div>
-              <b class="arch-index">01</b>
-            </div>
-            <div class="arch-connector"><span></span><small>PARSE / NORMALIZE</small></div>
-            <div class="arch-node">
-              <span class="arch-icon">R</span>
-              <div><strong>Retrieval layer</strong><small>Chunk · embed · index · rank</small></div>
-              <b class="arch-index">02</b>
-            </div>
-            <div class="arch-connector"><span></span><small>CONTEXT + STATE</small></div>
-            <div class="arch-node arch-focus">
-              <span class="arch-icon">AG</span>
-              <div><strong>Agent orchestration</strong><small>LangGraph · tools · APIs · MCP</small></div>
-              <b class="arch-index">03</b>
-            </div>
-            <div class="arch-connector"><span></span><small>TRACE / EVALUATE</small></div>
-            <div class="arch-node arch-observe">
-              <span class="arch-icon">◎</span>
-              <div><strong>Evaluation & telemetry</strong><small>Quality · traces · feedback</small></div>
-              <b class="arch-index">04</b>
-            </div>
-          </div>
-          <div class="console-footer mono"><span>DESIGN PRINCIPLE</span><span>MODELS ARE COMPONENTS. SYSTEMS SHIP.</span></div>
-        </div>
-      </aside>
+        <div class="float-label label-top mono"><span class="tiny-square"></span> ORCHESTRATION <b>01</b></div>
+        <div class="float-label label-right mono"><span class="tiny-square blue"></span> INFERENCE <b>02</b></div>
+        <div class="float-label label-bottom mono"><span class="tiny-square amber"></span> OBSERVABILITY <b>03</b></div>
+        <div class="visual-coordinates mono">X 0.8421<br>Y 0.2937</div>
+      </div>
     </section>
 
-    <section class="metrics layout" aria-label="Engineering impact">
-      <div class="metric-label mono">SELECTED<br>IMPACT</div>
-      <div class="metric"><strong>30K<span>+</span></strong><small>employees served by enterprise GenAI platform</small></div>
-      <div class="metric"><strong>143K<span>+</span></strong><small>weekly employee hours of productivity gains enabled platform-wide</small></div>
-      <div class="metric"><strong>5</strong><small>production agentic workflows shipped</small></div>
-      <div class="metric"><strong>4<span>×</span></strong><small>document ingestion throughput improvement</small></div>
-      <div class="metric"><strong>20–25<span>%</span></strong><small>improvement in production model evaluation</small></div>
+    <section class="signal-bar">
+      <div class="shell signal-inner mono">
+        <span class="signal-heading">ENGINEERING SIGNAL</span>
+        <div><b>30K+</b><small>EMPLOYEES SERVED</small></div>
+        <div><b>5</b><small>PRODUCTION AGENTS</small></div>
+        <div><b>4×</b><small>INGESTION THROUGHPUT</small></div>
+        <div><b>20–25%</b><small>EVALUATION IMPROVEMENT</small></div>
+        <div class="signal-end"><span class="status-dot"></span> MEASURED PLATFORM IMPACT</div>
+      </div>
     </section>
 
-    <section class="section layout" id="work">
-      <div class="section-heading">
-        <div>
-          <p class="section-id mono">01 / SELECTED WORK</p>
-          <h2>Engineering <span>in production.</span></h2>
+    <section class="section shell" id="work">
+      <div class="section-head">
+        <div><p class="section-kicker mono">01 / SELECTED WORK</p><h2>Things I've <span>engineered.</span></h2></div>
+        <p class="section-intro">Professional systems and independent builds. Open a project to inspect the problem, architecture, decisions and implementation.</p>
+      </div>
+
+      <div class="work-toolbar">
+        <div class="filter-group mono" role="group" aria-label="Filter work">
+          <button class="filter is-active" data-filter="all" type="button" aria-pressed="true">ALL <span>04</span></button>
+          <button class="filter" data-filter="ai" type="button" aria-pressed="false">AI / LLM</button>
+          <button class="filter" data-filter="backend" type="button" aria-pressed="false">BACKEND</button>
+          <button class="filter" data-filter="systems" type="button" aria-pressed="false">SYSTEMS</button>
         </div>
-        <p class="section-description">A mix of enterprise engineering and independent builds. Each project is presented through its architecture, implementation choices and constraints.</p>
+        <span class="toolbar-note mono">SELECT A MODULE TO INSPECT <b>↘</b></span>
       </div>
 
-      <div class="filter-row mono" role="group" aria-label="Filter projects">
-        <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">ALL <span>04</span></button>
-        <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI / LLM</button>
-        <button class="filter" type="button" data-filter="backend" aria-pressed="false">BACKEND</button>
-        <button class="filter" type="button" data-filter="systems" aria-pressed="false">SYSTEMS</button>
-      </div>
-
-      <div class="project-list">
-        <article class="project project-featured" data-category="ai">
-          <div class="project-meta mono">
-            <span>01 — PROFESSIONAL ENGINEERING</span>
-            <span class="project-status"><i></i> PRODUCTION</span>
-          </div>
-          <div class="project-feature-content">
-            <div class="project-copy">
-              <p class="project-type mono">SOCIÉTÉ GÉNÉRALE / ENTERPRISE GENAI</p>
-              <h3>Engineering the platform<br>around the <span>model.</span></h3>
-              <p>Contributing to an enterprise GenAI platform used by 30,000+ employees. My work spans agentic workflow delivery, model productionization, multimodal retrieval, document ingestion and production evaluation.</p>
-              <div class="contribution-list">
-                <div><b>01</b><span>Designed and shipped five agentic workflows using LangGraph, LangChain, MCP, structured tool calling and internal APIs.</span></div>
-                <div><b>02</b><span>Improved ingestion throughput 4× through asynchronous processing, process parallelism and optimized Docling pipelines.</span></div>
-                <div><b>03</b><span>Worked on deployment and inference optimization for hosted and open-weight models, including quantization and QLoRA / PEFT.</span></div>
-                <div><b>04</b><span>Built evaluation and observability workflows using tracing, semantic telemetry and Elasticsearch analytics.</span></div>
-              </div>
-              <div class="tags"><span>Python</span><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>FastAPI</span><span>Azure OpenAI</span><span>LLMOps</span></div>
+      <div class="project-grid">
+        <article class="project-card project-card-featured" data-category="ai">
+          <div class="card-top mono"><span>01 / ENTERPRISE AI</span><span class="card-state"><i></i> PRODUCTION</span></div>
+          <div class="featured-card-body">
+            <div class="card-content">
+              <p class="card-tag mono">SOCIÉTÉ GÉNÉRALE · GENAI PLATFORM</p>
+              <h3>Productionizing<br><em>intelligence.</em></h3>
+              <p>Engineering contributions to an enterprise GenAI platform serving 30,000+ employees. The work spans agent workflows, model productionization, multimodal retrieval, document pipelines and model evaluation.</p>
+              <div class="card-chips"><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>FastAPI</span><span>Azure OpenAI</span><span>LLMOps</span></div>
+              <button class="inspect-button mono" type="button" data-project="enterprise">INSPECT SYSTEM <span>↗</span></button>
             </div>
-            <div class="project-aside">
-              <div class="impact-box">
-                <span class="mono">PLATFORM SCALE</span>
-                <strong>30,000<span>+</span></strong>
-                <small>employees</small>
+            <div class="featured-telemetry">
+              <div class="telemetry-header mono">PLATFORM TELEMETRY <span>SELECTED METRICS</span></div>
+              <div class="telemetry-metric"><strong>143K<span>+</span></strong><small>WEEKLY PRODUCTIVITY HOURS ENABLED PLATFORM-WIDE</small></div>
+              <div class="telemetry-chart" aria-label="Illustrative throughput comparison, not live production telemetry">
+                <div class="chart-label mono"><span>DOCUMENT PIPELINE</span><span>4×</span></div>
+                <div class="chart-track"><i></i></div>
+                <div class="chart-label muted mono"><span>BEFORE</span><span>AFTER OPTIMIZATION</span></div>
               </div>
-              <div class="impact-box">
-                <span class="mono">THROUGHPUT</span>
-                <strong>4×</strong>
-                <small>document ingestion</small>
-              </div>
-              <div class="impact-box">
-                <span class="mono">EVALUATION</span>
-                <strong>20–25%</strong>
-                <small>improvement</small>
-              </div>
-              <p class="confidential-note mono">INTERNAL PLATFORM · IMPLEMENTATION DETAILS OMITTED WHERE CONFIDENTIAL</p>
+              <div class="telemetry-foot mono"><span>5 AGENTIC WORKFLOWS</span><span>20–25% EVAL LIFT</span></div>
             </div>
           </div>
+          <div class="card-bottom mono"><span>CONTRIBUTION / ENTERPRISE PLATFORM</span><span>PRIVATE IMPLEMENTATION DETAILS OMITTED</span></div>
         </article>
 
-        <article class="project project-standard" data-category="backend">
-          <div class="project-meta mono"><span>02 — INDEPENDENT BUILD</span><span>PYTHON / LOCAL-FIRST</span></div>
-          <div class="project-standard-grid">
-            <div class="project-copy">
-              <p class="project-type mono">LIFEADMIN</p>
-              <h3>A deterministic core.<br><span>An optional local agent.</span></h3>
-              <p>A personal deadline manager with a CLI, browser UI, MCP server and SQLite persistence. A local Gemma 4 model through Ollama and Google ADK provides an optional natural-language interface.</p>
-              <div class="tags"><span>Python</span><span>SQLite</span><span>MCP</span><span>Google ADK</span><span>Gemma 4</span></div>
-              <a class="repo-link mono" href="https://github.com/Rasika020/LifeAdmin" target="_blank" rel="noreferrer">VIEW REPOSITORY <span>↗</span></a>
+        <article class="project-card" data-category="backend">
+          <div class="card-top mono"><span>02 / LOCAL-FIRST PRODUCT</span><span>PYTHON · MCP</span></div>
+          <div class="card-visual life-visual">
+            <div class="visual-window">
+              <div class="window-top mono"><span>lifeadmin — agenda</span><span>● ● ●</span></div>
+              <div class="agenda-row"><i></i><span>Renew vehicle insurance</span><small>10 NOV</small></div>
+              <div class="agenda-row"><i></i><span>Submit travel documents</span><small>14 NOV</small></div>
+              <div class="agenda-row"><i></i><span>Book annual check-up</span><small>18 NOV</small></div>
+              <div class="agenda-footer mono">3 UPCOMING · STORED LOCALLY</div>
             </div>
-            <div class="mini-architecture" aria-label="LifeAdmin architecture">
-              <div class="mini-arch-label mono">REQUEST PATH</div>
-              <div class="mini-node"><b>01</b><span>CLI / WEB UI / ADK AGENT</span></div>
-              <div class="mini-arrow">↓</div>
-              <div class="mini-node mini-node-accent"><b>02</b><span>MCP TOOL INTERFACE</span></div>
-              <div class="mini-arrow">↓</div>
-              <div class="mini-node"><b>03</b><span>VALIDATION + BUSINESS RULES</span></div>
-              <div class="mini-arrow">↓</div>
-              <div class="mini-node mini-node-final"><b>04</b><span>SQLITE PERSISTENCE</span></div>
-              <p class="mini-arch-foot mono">MODEL OPTIONAL · DATA OPERATIONS DETERMINISTIC</p>
-            </div>
+            <span class="visual-caption mono">LOCAL DATA · OPTIONAL LOCAL MODEL</span>
           </div>
+          <div class="card-content card-content-compact">
+            <p class="card-tag mono">LIFEADMIN</p>
+            <h3>Useful without<br>the <em>model.</em></h3>
+            <p>A local-first deadline manager with CLI, browser UI, MCP server and SQLite. Optional Gemma 4 agent through Ollama and Google ADK.</p>
+            <div class="card-chips"><span>Python</span><span>SQLite</span><span>MCP</span><span>ADK</span><span>Gemma 4</span></div>
+            <button class="inspect-button mono" type="button" data-project="lifeadmin">INSPECT SYSTEM <span>↗</span></button>
+          </div>
+          <div class="card-bottom mono"><span>DETERMINISTIC CORE</span><span>01 / 04</span></div>
         </article>
 
-        <article class="project project-standard" data-category="ai">
-          <div class="project-meta mono"><span>03 — HACKATHON PROTOTYPE</span><span>COMPUTER VISION / GRAPHS</span></div>
-          <div class="project-standard-grid">
-            <div class="project-copy">
-              <p class="project-type mono">PROOFLENS</p>
-              <h3>From diagram image<br>to <span>inspectable graph.</span></h3>
-              <p>Reconstructs flowcharts into structured nodes and directed edges, validates graph structure in application code, and keeps the extracted representation navigable against the source image.</p>
-              <p class="technical-note">Core design: the model proposes the graph; deterministic validation checks structure; users can inspect and correct uncertainty.</p>
-              <div class="tags"><span>Vision Models</span><span>Graph Representation</span><span>Validation</span><span>Python</span></div>
-              <a class="repo-link mono" href="https://github.com/Rasika020/ProofLens" target="_blank" rel="noreferrer">VIEW REPOSITORY <span>↗</span></a>
-            </div>
-            <div class="graph-preview" aria-label="Illustrative graph structure">
-              <div class="graph-label mono">EXTRACTED FLOW / EXAMPLE</div>
-              <svg viewBox="0 0 420 230" role="img" aria-label="Flowchart with start node, decision, yes and no branches, and two terminal nodes">
-                <defs>
-                  <marker id="arrowhead" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#768695" stroke-width="1"/></marker>
-                </defs>
-                <path d="M210 42 V76" stroke="#768695" stroke-width="1.4" marker-end="url(#arrowhead)" fill="none"/>
-                <path d="M210 122 V149 H105 V174" stroke="#768695" stroke-width="1.4" marker-end="url(#arrowhead)" fill="none"/>
-                <path d="M210 149 H315 V174" stroke="#768695" stroke-width="1.4" marker-end="url(#arrowhead)" fill="none"/>
-                <rect x="154" y="10" width="112" height="32" rx="5" fill="#14212b" stroke="#427b71"/>
-                <text x="210" y="30" text-anchor="middle" fill="#cde8df" font-size="10" font-family="IBM Plex Mono">START</text>
-                <path d="M210 76 L266 99 L210 122 L154 99 Z" fill="#152230" stroke="#73a8d3"/>
-                <text x="210" y="102" text-anchor="middle" fill="#d2e5f8" font-size="9" font-family="IBM Plex Mono">DECISION</text>
-                <rect x="54" y="174" width="102" height="34" rx="5" fill="#14212b" stroke="#427b71"/>
-                <text x="105" y="195" text-anchor="middle" fill="#cde8df" font-size="10" font-family="IBM Plex Mono">PATH A</text>
-                <rect x="264" y="174" width="102" height="34" rx="5" fill="#14212b" stroke="#427b71"/>
-                <text x="315" y="195" text-anchor="middle" fill="#cde8df" font-size="10" font-family="IBM Plex Mono">PATH B</text>
-                <text x="142" y="143" text-anchor="middle" fill="#8eaa9e" font-size="9" font-family="IBM Plex Mono">YES</text>
-                <text x="278" y="143" text-anchor="middle" fill="#8eaa9e" font-size="9" font-family="IBM Plex Mono">NO</text>
+        <article class="project-card" data-category="ai">
+          <div class="card-top mono"><span>03 / HACKATHON PROTOTYPE</span><span>VISION · GRAPHS</span></div>
+          <div class="card-visual proof-visual">
+            <div class="graph-ui mono">
+              <div class="graph-ui-head">FLOWCHART / RECONSTRUCTION <span>● VALIDATION</span></div>
+              <svg viewBox="0 0 390 152" role="img" aria-label="Example graph with a start node, decision node and two branches">
+                <defs><marker id="graphArrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#728b9b" stroke-width="1"/></marker></defs>
+                <path d="M195 31V54M195 94V112H94V128M195 112H296V128" stroke="#728b9b" stroke-width="1.3" fill="none" marker-end="url(#graphArrow)"/>
+                <rect x="145" y="4" width="100" height="27" rx="4" fill="#14252b" stroke="#4c8777"/>
+                <text x="195" y="21" font-size="9" fill="#c5f0df" text-anchor="middle">START</text>
+                <path d="M195 54L244 74L195 94L146 74Z" fill="#182435" stroke="#7da9d5"/>
+                <text x="195" y="77" font-size="8" fill="#d6e8fb" text-anchor="middle">DECISION</text>
+                <rect x="50" y="128" width="88" height="22" rx="4" fill="#14252b" stroke="#4c8777"/>
+                <rect x="252" y="128" width="88" height="22" rx="4" fill="#14252b" stroke="#4c8777"/>
+                <text x="94" y="142" font-size="8" fill="#c5f0df" text-anchor="middle">PATH A</text>
+                <text x="296" y="142" font-size="8" fill="#c5f0df" text-anchor="middle">PATH B</text>
+                <text x="143" y="108" font-size="7" fill="#93b8a8">YES</text><text x="239" y="108" font-size="7" fill="#93b8a8">NO</text>
               </svg>
-              <div class="graph-legend mono"><span><i class="legend-node"></i> NODE</span><span><i class="legend-edge"></i> DIRECTED EDGE</span><span><i class="legend-check"></i> VALIDATED</span></div>
             </div>
+            <span class="visual-caption mono">MODEL PROPOSES · CODE VALIDATES</span>
           </div>
+          <div class="card-content card-content-compact">
+            <p class="card-tag mono">PROOFLENS</p>
+            <h3>Images into<br><em>inspectable graphs.</em></h3>
+            <p>Reconstruct flowcharts into structured nodes and directed edges, validate graph structure deterministically and keep results navigable against the source.</p>
+            <div class="card-chips"><span>Vision</span><span>Graph Model</span><span>Validation</span><span>Python</span></div>
+            <button class="inspect-button mono" type="button" data-project="prooflens">INSPECT SYSTEM <span>↗</span></button>
+          </div>
+          <div class="card-bottom mono"><span>HACKATHON PROTOTYPE</span><span>02 / 04</span></div>
         </article>
 
-        <article class="project project-standard project-last" data-category="systems">
-          <div class="project-meta mono"><span>04 — SPONSORED ACADEMIC PROJECT</span><span>LINUX / SECURITY</span></div>
-          <div class="project-standard-grid">
-            <div class="project-copy">
-              <p class="project-type mono">FILE-LEVEL ENCRYPTION FOR XFS</p>
-              <h3>Encryption at the<br><span>file-system layer.</span></h3>
-              <p>Explored file-level encryption support for the XFS filesystem. The project used OpenSSL AES encryption, SHA-256 integrity checks and communication with a key management server.</p>
-              <div class="tags"><span>Linux</span><span>XFS</span><span>OpenSSL</span><span>AES</span><span>SHA-256</span><span>KMS</span></div>
-              <p class="project-footnote mono">PROJECT SPONSORED BY VERITAS TECHNOLOGIES</p>
+        <article class="project-card" data-category="systems">
+          <div class="card-top mono"><span>04 / SYSTEMS ENGINEERING</span><span>LINUX · SECURITY</span></div>
+          <div class="card-visual xfs-visual">
+            <div class="security-stack mono">
+              <div><span>01</span><b>FILE INPUT</b><small>FILE DATA</small></div>
+              <i>↓</i>
+              <div class="security-active"><span>02</span><b>AES / OPENSSL</b><small>ENCRYPTION</small></div>
+              <i>↓</i>
+              <div><span>03</span><b>SHA-256 + KMS</b><small>INTEGRITY / KEY MGMT</small></div>
             </div>
-            <div class="security-preview">
-              <div class="security-label mono">FILE PROTECTION PIPELINE</div>
-              <div class="security-layer"><span class="security-symbol">01</span><div><b>FILE INPUT</b><small>File data / metadata</small></div></div>
-              <div class="security-flow mono">↓ ENCRYPT</div>
-              <div class="security-layer security-layer-active"><span class="security-symbol">02</span><div><b>AES · OPENSSL</b><small>Confidentiality</small></div></div>
-              <div class="security-flow mono">↓ VERIFY / KEY ACCESS</div>
-              <div class="security-layer"><span class="security-symbol">03</span><div><b>SHA-256 + KMS</b><small>Integrity / key management</small></div></div>
-              <p class="security-caption mono">CONCEPTUAL PROJECT FLOW</p>
-            </div>
+            <span class="visual-caption mono">CONCEPTUAL PROJECT FLOW</span>
           </div>
+          <div class="card-content card-content-compact">
+            <p class="card-tag mono">FILE-LEVEL ENCRYPTION FOR XFS</p>
+            <h3>Security at the<br><em>filesystem layer.</em></h3>
+            <p>Sponsored academic project exploring file-level encryption for XFS using OpenSSL AES, SHA-256 integrity checks and KMS communication.</p>
+            <div class="card-chips"><span>Linux</span><span>XFS</span><span>OpenSSL</span><span>AES</span><span>KMS</span></div>
+            <button class="inspect-button mono" type="button" data-project="xfs">INSPECT SYSTEM <span>↗</span></button>
+          </div>
+          <div class="card-bottom mono"><span>VERITAS TECHNOLOGIES</span><span>03 / 04</span></div>
         </article>
       </div>
-      <div class="other-repos">
-        <div><span class="mono">ALSO ON GITHUB</span><p>Open-source agent tooling · Face recognition attendance · Online voting system · Low-level design practice</p></div>
-        <a class="repo-link mono" href="https://github.com/Rasika020?tab=repositories" target="_blank" rel="noreferrer">ALL REPOSITORIES <span>↗</span></a>
+      <div class="repo-footer mono"><span>MORE CODE, EXPERIMENTS & OPEN SOURCE</span><a href="https://github.com/Rasika020?tab=repositories" target="_blank" rel="noreferrer">BROWSE ALL REPOSITORIES ↗</a></div>
+    </section>
+
+    <section class="architecture-section" id="architecture">
+      <div class="shell architecture-shell">
+        <div class="section-head">
+          <div><p class="section-kicker mono">02 / INTERACTIVE ARCHITECTURE LAB</p><h2>Explore the <span>system layers.</span></h2></div>
+          <p class="section-intro">Switch between engineering patterns. Select a node to inspect its responsibility and implementation context.</p>
+        </div>
+
+        <div class="lab-panel">
+          <div class="lab-tabs mono" role="tablist" aria-label="Architecture diagrams">
+            <button class="lab-tab is-active" type="button" role="tab" aria-selected="true" data-architecture="agentic">01 / AGENTIC WORKFLOW</button>
+            <button class="lab-tab" type="button" role="tab" aria-selected="false" data-architecture="rag">02 / MULTIMODAL RAG</button>
+            <button class="lab-tab" type="button" role="tab" aria-selected="false" data-architecture="eval">03 / EVALUATION LOOP</button>
+          </div>
+          <div class="lab-content">
+            <div class="diagram-area">
+              <div class="diagram-head mono"><span id="diagram-title">LANGGRAPH / TOOL-CALLING PIPELINE</span><span class="diagram-state"><i></i> REFERENCE DESIGN</span></div>
+              <div class="diagram-flow" id="diagram-flow" aria-live="polite"></div>
+              <div class="diagram-foot mono"><span>SELECT ANY NODE TO INSPECT</span><span>FLOW DIRECTION ↓</span></div>
+            </div>
+            <aside class="node-inspector" aria-live="polite">
+              <div class="inspector-top mono"><span>NODE INSPECTOR</span><span id="inspector-id">N-01</span></div>
+              <p class="inspector-kicker mono" id="inspector-kind">INPUT / ENTRYPOINT</p>
+              <h3 id="inspector-title">User request</h3>
+              <p id="inspector-description">A request enters the workflow with its conversation context and relevant metadata.</p>
+              <div class="inspector-detail">
+                <span class="mono">RESPONSIBILITY</span>
+                <p id="inspector-responsibility">Capture intent, validate required inputs and establish the execution context.</p>
+              </div>
+              <div class="inspector-detail">
+                <span class="mono">IMPLEMENTATION</span>
+                <p id="inspector-implementation">Typed state, explicit input schemas and request-scoped identifiers.</p>
+              </div>
+              <div class="inspector-stack mono" id="inspector-stack"><span>PYTHON</span><span>API</span></div>
+            </aside>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="systems-section" id="systems">
-      <div class="layout systems-layout">
-        <div class="section-heading">
-          <div>
-            <p class="section-id mono">02 / ENGINEERING APPROACH</p>
-            <h2>Think in <span>boundaries.</span></h2>
-          </div>
-          <p class="section-description">I’m interested in the parts of software that make complex systems predictable: clear interfaces, explicit state, validation, failure handling and measurement.</p>
+    <section class="live-section shell" id="terminal">
+      <div class="section-head">
+        <div><p class="section-kicker mono">03 / INTERACTIVE TERMINAL</p><h2>Talk to the <span>portfolio.</span></h2></div>
+        <p class="section-intro">A tiny command interface. Try <code>help</code>, <code>projects</code>, <code>stack</code> or <code>contact</code>.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-titlebar mono">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>rasika@portfolio: ~</span>
+          <span class="terminal-platform">zsh · interactive session</span>
         </div>
-        <div class="boundary-grid">
-          <article><span class="boundary-num mono">01</span><h3>Orchestration</h3><p>Stateful workflows, tool contracts, routing and API integration.</p><small class="mono">LANGGRAPH / MCP / REST</small></article>
-          <article><span class="boundary-num mono">02</span><h3>Retrieval</h3><p>Parsing, chunking, embeddings, indexing, retrieval and reranking.</p><small class="mono">DOCLING / VECTOR SEARCH / RAG</small></article>
-          <article><span class="boundary-num mono">03</span><h3>Inference</h3><p>Model selection, quantization, fine-tuning and serving trade-offs.</p><small class="mono">AWQ / NF4 / QLORA / PEFT</small></article>
-          <article><span class="boundary-num mono">04</span><h3>Observability</h3><p>Evaluation datasets, traces, semantic telemetry and quality analysis.</p><small class="mono">LANGSMITH / ELASTICSEARCH</small></article>
+        <div class="terminal-screen" id="terminal-screen" role="log" aria-live="polite" aria-label="Terminal output">
+          <p class="terminal-welcome">Rasika Dev Portfolio [Version 2026.11]</p>
+          <p>Type <span class="terminal-green">help</span> to list available commands.</p>
+        </div>
+        <form class="terminal-input-row" id="terminal-form">
+          <label class="terminal-prompt mono" for="terminal-input">visitor<span>@</span>rasika:~$</label>
+          <input id="terminal-input" class="mono" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Enter a terminal command">
+          <button type="submit" class="mono">RUN ↵</button>
+        </form>
+        <div class="terminal-suggestions mono">
+          <span>QUICK COMMANDS</span>
+          <button type="button" data-command="help">help</button>
+          <button type="button" data-command="about">about</button>
+          <button type="button" data-command="projects">projects</button>
+          <button type="button" data-command="stack">stack</button>
+          <button type="button" data-command="contact">contact</button>
         </div>
       </div>
     </section>
 
-    <section class="section layout experience-section" id="experience">
-      <div class="section-heading">
-        <div>
-          <p class="section-id mono">03 / EXPERIENCE</p>
-          <h2>Where I’ve <span>worked.</span></h2>
+    <section class="experience-section" id="experience">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="section-kicker mono">04 / EXPERIENCE</p><h2>Engineering <span>timeline.</span></h2></div>
+          <p class="section-intro">Experience across enterprise AI platforms, cloud networking and systems-level project work.</p>
         </div>
-        <p class="section-description">Professional experience across enterprise AI, cloud networking and systems-level engineering.</p>
-      </div>
-      <div class="experience-list">
-        <article class="experience-item">
-          <div class="experience-date mono">AUG 2024 — PRESENT</div>
-          <div class="experience-main">
-            <h3>Software Engineer — AI</h3>
-            <p class="experience-company">Société Générale Global Solution Centre <span>/ Bengaluru</span></p>
-            <p>Enterprise GenAI platform engineering: agentic workflows, model productionization, multimodal retrieval, document processing and AI observability.</p>
-          </div>
-          <div class="experience-side mono">GENAI / LLMOPS</div>
-        </article>
-        <article class="experience-item">
-          <div class="experience-date mono">MAY 2023 — JUL 2023</div>
-          <div class="experience-main">
-            <h3>Software Engineer Intern</h3>
-            <p class="experience-company">Microsoft <span>/ Azure Networking</span></p>
-            <p>Built C APIs and a gRPC communication channel between the SDN Appliance Manager and Host Agent for remote card-state diagnostics. Routed diagnostic results to Kusto (Azure Data Explorer) through an hourly polling pipeline.</p>
-          </div>
-          <div class="experience-side mono">C / GRPC / AZURE</div>
-        </article>
-        <article class="experience-item">
-          <div class="experience-date mono">AUG 2023 — JAN 2024</div>
-          <div class="experience-main">
-            <h3>Project Intern</h3>
-            <p class="experience-company">Veritas Technologies</p>
-            <p>Worked on file-level encryption support for the XFS filesystem as a sponsored B.Tech project.</p>
-          </div>
-          <div class="experience-side mono">LINUX / SECURITY</div>
-        </article>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date mono">AUG 2024 — PRESENT</div>
+            <div class="timeline-main"><h3>Software Engineer — AI</h3><p class="timeline-org">Société Générale Global Solution Centre <span>/ Bengaluru</span></p><p>Enterprise GenAI platform: production agentic workflows, model deployment, multimodal RAG, document processing, inference optimization and AI observability.</p></div>
+            <div class="timeline-domain mono">GENAI / LLMOPS</div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date mono">MAY 2023 — JUL 2023</div>
+            <div class="timeline-main"><h3>Software Engineer Intern</h3><p class="timeline-org">Microsoft <span>/ Azure Networking</span></p><p>Built C APIs and a gRPC channel for remote SDN appliance diagnostics, with diagnostic results routed to Kusto (Azure Data Explorer) through an hourly polling pipeline.</p></div>
+            <div class="timeline-domain mono">C / GRPC / AZURE</div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date mono">AUG 2023 — JAN 2024</div>
+            <div class="timeline-main"><h3>Project Intern</h3><p class="timeline-org">Veritas Technologies</p><p>Worked on a sponsored B.Tech project exploring file-level encryption support in the XFS filesystem.</p></div>
+            <div class="timeline-domain mono">LINUX / SECURITY</div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="stack-section" id="stack">
-      <div class="layout stack-layout">
-        <div class="section-heading">
-          <div>
-            <p class="section-id mono">04 / TECHNICAL TOOLKIT</p>
-            <h2>Tools I <span>work with.</span></h2>
-          </div>
-          <p class="section-description">Grouped by engineering domain, not as an unfiltered keyword cloud.</p>
+      <div class="shell stack-shell">
+        <div class="section-head">
+          <div><p class="section-kicker mono">05 / TECHNICAL TOOLKIT</p><h2>Tools of the <span>trade.</span></h2></div>
+          <p class="section-intro">Grouped around the work I do, rather than an unfiltered list of keywords.</p>
         </div>
-        <div class="stack-table">
-          <div class="stack-row"><span class="stack-index mono">01</span><h3>Languages</h3><p>Python <i>·</i> Java <i>·</i> C <i>·</i> C# <i>·</i> SQL</p></div>
-          <div class="stack-row"><span class="stack-index mono">02</span><h3>AI / ML</h3><p>LLMs <i>·</i> RAG <i>·</i> Agentic AI <i>·</i> Hugging Face <i>·</i> PyTorch <i>·</i> QLoRA / PEFT <i>·</i> Quantization</p></div>
-          <div class="stack-row"><span class="stack-index mono">03</span><h3>Frameworks</h3><p>LangChain <i>·</i> LangGraph <i>·</i> LangSmith <i>·</i> FastAPI <i>·</i> Google ADK <i>·</i> MCP</p></div>
-          <div class="stack-row"><span class="stack-index mono">04</span><h3>Data & infrastructure</h3><p>PostgreSQL <i>·</i> MySQL <i>·</i> MongoDB <i>·</i> SQLite <i>·</i> Elasticsearch <i>·</i> Weaviate <i>·</i> Ollama</p></div>
-          <div class="stack-row"><span class="stack-index mono">05</span><h3>Engineering</h3><p>REST APIs <i>·</i> gRPC <i>·</i> Linux <i>·</i> Git <i>·</i> Model deployment <i>·</i> Observability <i>·</i> System design</p></div>
+        <div class="stack-grid">
+          <article><span class="stack-number mono">01</span><h3>Languages</h3><p>Python <i>·</i> Java <i>·</i> C <i>·</i> C# <i>·</i> SQL</p></article>
+          <article><span class="stack-number mono">02</span><h3>AI & ML</h3><p>LLMs <i>·</i> RAG <i>·</i> Agentic AI <i>·</i> Hugging Face <i>·</i> PyTorch <i>·</i> QLoRA / PEFT <i>·</i> Quantization</p></article>
+          <article><span class="stack-number mono">03</span><h3>Frameworks</h3><p>LangChain <i>·</i> LangGraph <i>·</i> LangSmith <i>·</i> FastAPI <i>·</i> Google ADK <i>·</i> MCP</p></article>
+          <article><span class="stack-number mono">04</span><h3>Data & infrastructure</h3><p>PostgreSQL <i>·</i> MySQL <i>·</i> MongoDB <i>·</i> SQLite <i>·</i> Elasticsearch <i>·</i> Weaviate <i>·</i> Ollama</p></article>
+          <article><span class="stack-number mono">05</span><h3>Engineering</h3><p>REST APIs <i>·</i> gRPC <i>·</i> Linux <i>·</i> Git <i>·</i> Model deployment <i>·</i> Observability <i>·</i> System design</p></article>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="layout contact-layout">
-        <div>
-          <p class="section-id mono">05 / CONTACT</p>
-          <h2>Let’s talk <span>engineering.</span></h2>
-          <p>For software engineering, applied AI, backend systems or interesting technical problems.</p>
-        </div>
-        <div class="contact-details">
-          <a class="email-link" href="mailto:rasikadevanhalli020@gmail.com">rasikadevanhalli020@gmail.com <span>↗</span></a>
-          <div class="contact-links mono">
-            <a href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GITHUB ↗</a>
-            <a href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
-            <a href="https://leetcode.com/u/user3138v/" target="_blank" rel="noreferrer">LEETCODE ↗</a>
-          </div>
+    <section class="contact-section">
+      <div class="shell contact-shell">
+        <div><p class="section-kicker mono">06 / CONTACT</p><h2>Have a technical<br>problem worth <span>solving?</span></h2><p>For software engineering, applied AI, backend systems and interesting technical challenges.</p></div>
+        <div class="contact-card">
+          <span class="mono">ESTABLISH CONNECTION</span>
+          <a class="contact-email" href="mailto:rasikadevanhalli020@gmail.com">rasikadevanhalli020@gmail.com <b>↗</b></a>
+          <div class="contact-social mono"><a href="https://github.com/Rasika020" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/rasika-devanhalli/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://leetcode.com/u/user3138v/" target="_blank" rel="noreferrer">LEETCODE ↗</a></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer layout">
-    <span class="mono">© <span data-year>2026</span> RASIKA DEVANHALLI</span>
-    <span class="mono">BUILT WITH HTML / CSS / JAVASCRIPT</span>
-    <a class="mono" href="#top">BACK TO TOP ↑</a>
+  <footer class="footer shell mono">
+    <span>© <span id="year">2026</span> RASIKA DEVANHALLI</span>
+    <span>BUILT WITH HTML / CSS / JAVASCRIPT</span>
+    <a href="#top">BACK TO TOP ↑</a>
   </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top mono"><span>ENGINEERING CASE FILE</span><button type="button" id="dialog-close" aria-label="Close project details">✕</button></div>
+    <div class="dialog-content" id="dialog-content"></div>
+  </dialog>
+
   <script src="script.js" defer></script>
 </body>
 </html>
